@@ -1,0 +1,31 @@
+Hello Team GDGOC!
+
+
+
+
+Literally This Exercise Teaches me a lot from making sticky nav to animated cards,
+ actually its takes more time bcz of my mistake once i read the task at that tym i made mistake to 
+ read and when task is completed again iwas reading the needs then I realise i made another 
+ one ( actully there is mantioned "each card includes an icon, servise name and description. call to actn btn " but the mistake 
+ is i didn't notice "." between description and CTA btn , thats take more tym.)  
+
+ Approach :
+
+ To create a responsive service page with a sticky header that shrinks on scroll, use HTML & CSS.
+ Design a visually appealing header with smooth transitions that adapts when scrolling. 
+ Add flexible service cards with consistent spacing and responsive layouts. Include an engaging call-to-action banner 
+ with hover effects for user interaction. Use JavaScript to detect scroll activity and dynamically adjust the header 
+ size, ensuring an optimized user experience.
+
+ learnings:
+
+ position : sticky,fixed,static.
+ min/max height,
+ z-index,
+ animation,
+ transitions,
+ @keyframes -- actully i learned previously, but never used  before.
+ @media
+
+
+ ThankYou!

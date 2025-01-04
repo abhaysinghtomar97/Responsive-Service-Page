@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_Service_Page</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to top, rgb(24, 24, 24), rgb(91, 218, 218));
+            justify-content: space-between;
+            min-height: 100vh;
+            
+
+
+
+        }
+
+        .nav {
+            background-color: aqua;
+            /* height: 50px; */
+        
+
+
+        }
+
+        header {
+            background-color: aqua;
+            /* height: 50px; */
+            position: sticky;
+            top: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            
+        }
+        header.shrink {
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #2222;
+        }
+
+        .nav ul {
+            display: flex;
+
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 20px;
+
+        }
+
+        .card {
+            background-color: bisque;
+            border-radius: 40px;
+
+            padding: 20px;
+            width: 300px;
+            opacity: 0;
+
+            animation: fadeIn 0.7s ease-in forwards;
+
+
+        }
+
+        .main .cards {
+            justify-content: space-between;
+            margin: 20px;
+
+            padding: 30px;
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .cta {
+            background: rgb(27, 26, 26);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .cta h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .cta button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #6a11cb;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #2575fc;
+            color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin: 10px 0px 10px 0px;
+
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+
+            }
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 810px) {
+            .card {
+                width: 100%;
+            }
+
+
+        }
+    </style>
+    <div class="container">
+        <header>
+            <div class="nav">
+
+                <ul>
+                    <li class="logo"><b>SERVICE.COM</b></li>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>About </li>
+                    <li>More</li>
+                </ul>
+            </div>
+
+        </header>
+
+
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-vector/financial-consulting-business-logo-vector-designs_641336-69.jpg"
+                        alt="logo1">
+                    <h2>Management Consulting</h2>
+                    <p>a service that helps businesses improve their performance by providing expert advice and
+                        guidance.</p>
+
+
+                </div>
+                <div class="card">
+                    <img src="https://marketplace.canva.com/EAF4y3V4yF0/1/0/1600w/canva-blue-and-white-cleaning-services-logo-sEqBBz8aTSU.jpg"
+                        alt="logo1">
+                    <h2>Cleaning</h2>
+                    <p>Cleaning is often performed for aesthetic, hygienic, functional, safety, or environmental
+                        protection purposes.</p>
+
+
+                </div>
+
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/021/480/263/non_2x/child-care-logo-design-people-care-logo-template-vector.jpg"
+                        alt="logo1">
+                    <h2>Child Care</h2>
+                    <p>The care and supervision of one or more children, typically ranging from two weeks to 18 years
+                        old.</p>
+
+
+                </div>
+                <div class="card">
+                    <img src="https://i.etsystatic.com/21535773/r/il/156ecf/2613536794/il_570xN.2613536794_ccld.jpg "
+                        alt="logo1">
+                    <h2>Personal Trainer</h2>
+                    <p>A personal trainer is an individual who creates and delivers safe and effective exercise programs
+                        for healthy individuals and groups</p>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cta">
+            <h3>Ready to Get Started?</h3>
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+
+</html>
